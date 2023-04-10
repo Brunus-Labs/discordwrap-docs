@@ -1,17 +1,16 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import {DocsThemeConfig} from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>Discordwrap</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/Brunus-Labs/discordwrap-docs',
   },
-  chat: {
-    link: 'https://discord.com',
+  docsRepositoryBase: 'https://github.com/Brunus-Labs/discordwrap-docs/tree/main',
+  editLink: {
+    text: "Edit this page",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Discordwrap Docs',
   },
 }
 
