@@ -12,6 +12,11 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Discordwrap Docs',
   },
+  useNextSeoProps() {
+    return {
+      titleTemplate: "DW - %s"
+    }
+  }
 }
 
 export default config
