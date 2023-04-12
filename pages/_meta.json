@@ -9,5 +9,8 @@
     "type": "page",
     "href": "https://github.com/Brunus-Labs/discordwrap-docs/issues",
     "newWindow": true
+  },
+  "api_reference": {
+    "title": "API Reference"
   }
 }
