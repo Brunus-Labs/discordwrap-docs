@@ -16,7 +16,7 @@ const config: DocsThemeConfig = {
   useNextSeoProps() {
     return {
       titleTemplate: "DW - %s",
-      description: "%s\nThe Discordwrap Docs",
+      description: "The Discordwrap Docs",
     };
   },
 };
