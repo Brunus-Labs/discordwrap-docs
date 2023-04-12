@@ -1,0 +1,27 @@
+## Installation
+
+Install Discordwrap with 
+```sh copy
+pip install discordwrap
+```
+and your good to go!
+
+## Quickstart
+
+Discordwrap is a very, very simple library. Our goal is to not really need documentation ourselves.
+All methods are named directly after their Discord API counterparts, and returns the same json the api returns.
+
+```py copy
+from discordwrap import Auth, channel
+
+Auth.TOKEN = 'YOUR TOKEN'
+
+# your channel
+channel = 1234567890
+
+message = channel.create_message(channel, json={
+    'content': 'Hello world!'
+})
+```
+
+
