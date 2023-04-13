@@ -1,1 +1,30 @@
 # API Reference
+
+Each method is directly copied from the discord API. Any JSON outlined from discord
+is exactly what needs to be passed to each method, and each method will return
+the JSON that Discord outlines
+
+## Channel
+
+The following methods are under `discordwrap.channel.[method]`
+
+### create_message
+```py filename="create_message.py"
+import discordwrap as dw
+new_message = dw.channel.create_message(channelid: int, json: dict)
+
+# Send text message
+new_message = dw.channel.create_message(1234567890, json={
+    "content": "Hello world!"
+})
+
+# Send embed
+new_message = dw.channel.create_message(1234567890, json={
+    "embeds": [{
+        "title": "Hello world",
+        "description": "From discordwrap!"
+    }]
+})
+```
+
+for full json options see the [Discord API](https://discord.com/developers/docs/resources/channel#create-message)
