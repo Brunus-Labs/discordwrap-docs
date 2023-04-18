@@ -8,10 +8,21 @@ the JSON that Discord outlines
 
 The following methods are under `discordwrap.channel.[method]`
 
+### get_channel
+```py filename="get_channel.py"
+import discordwrap as dw
+new_message = dw.channel.get_channel(channelid: Union[str, int])
+
+# Get Channel
+channel = dw.channel.get_channel(1234567890)
+```
+
+for full json options see the [Discord API](https://discord.com/developers/docs/resources/channel#get-channel)
+
 ### create_message
 ```py filename="create_message.py"
 import discordwrap as dw
-new_message = dw.channel.create_message(channelid: int, json: dict)
+new_message = dw.channel.create_message(channelid: Union[str, int], json: dict)
 
 # Send text message
 new_message = dw.channel.create_message(1234567890, json={
@@ -28,3 +39,4 @@ new_message = dw.channel.create_message(1234567890, json={
 ```
 
 for full json options see the [Discord API](https://discord.com/developers/docs/resources/channel#create-message)
+
