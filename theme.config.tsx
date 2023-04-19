@@ -3,7 +3,7 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 const config: DocsThemeConfig = {
   logo: <span>Discordwrap</span>,
   project: {
-    link: "https://github.com/Brunus-Labs/discordwrap-docs",
+    link: "https://github.com/Brunus-Labs/discordwrap",
   },
   docsRepositoryBase:
     "https://github.com/Brunus-Labs/discordwrap-docs/tree/main",
